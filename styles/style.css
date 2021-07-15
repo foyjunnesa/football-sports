@@ -105,6 +105,7 @@ section{
     height: 10px;
     margin-right: 20px;
     border-radius: 10px;
+    align-items: center;
 
 }
 
@@ -112,8 +113,78 @@ section{
    footer-area
 ================*/
 
+.logo-section{
+    margin-top: 136px;
+}
+
+.logo{
+    display: flex;
+    justify-self: center;
+}
+
+.logo img {
+    width: 23%;
+    position: relative;
+}
+
 .social-icon {
     position: relative;
-    display: flex;
     justify-content: center;
     color: tomato;
+}
+
+.fa-instagram-square{
+    width: 24px;
+}
+
+.fa-facebook{
+    width: 24px;
+}
+
+.fa-twitter{
+    width: 24px;
+}
+
+.fa-youtube{
+    width: 24px;
+}
+
+.social-icon p {
+    position: relative;
+    right: 10px;
+    font-size: 10px;
+    padding-top: 30px;
+    color: black;
+}
+
+ /*=========================
+    Media Query
+    ========================= */
+
+    /*=====================
+     Mobile Devices 
+     ======================*/
+
+    @media only screen and (max-width: 688px) {
+        .container{
+            width: 100%;
+        }
+
+        .header-bennar{
+            width: 100%;
+        }
+        .players{
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        .player{
+            flex-direction: column;
+        }
+        
+      
+        }
+   
+   
+    }
+        
+
